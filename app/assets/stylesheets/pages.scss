@@ -65,4 +65,115 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  line-height: 1.2;
+  text-align: center
+}
+
+h1 {
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-size: 2.8125rem;
+}
+
+.first-section-main {
+  background-image: url(asset_path("machu_picchu.jpg"));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 73vh;
+}
+
+.first-section-main__contents {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .first-section-main__contents {
+    left: 70%;
+    width: 50%;
+  }
+}
+
+.first-section-about {
+  background-image: url(asset_path("colorful_hills.jpg"));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 73vh;
+}
+
+.first-section-about__contents {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin: 3rem;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.secondary-text {
+  font-weight: 300;
+}
+
+.btn {
+  background-color: #2E72BD;
+  padding: 0.75rem 1.25rem;
+  font-weight: 400;
+  color: white;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #286090;
+}
+
+.second-section, .fourth-section {
+  padding: 5rem 0.9375rem;
+}
+
+.second-section h2, .fourth-section h2 {
+  margin: 1.875rem auto;
+}
+
+.second-section p, .fourth-section p {
+  font-size: 1.3125rem;
+  margin-bottom: 0.625rem;
+}
+
+.third-section {
+  background-image: url(asset_path("llamas.jpg"));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 52vh;
+}
+
+.btn-signup {
+  margin-top: 1.875rem;
+}
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: solid 1px #f5f5f5;
+}
+
+.footer p {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: 300;
 }
