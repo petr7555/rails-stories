@@ -77,7 +77,7 @@ h2 {
   font-size: 2.8125rem;
 }
 
-.first-section-main {
+.main-section-home {
   background-image: url(asset_path("machu_picchu.jpg"));
   background-position: center;
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@ h2 {
   height: 73vh;
 }
 
-.first-section-main__contents {
+.main-section-home__contents {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -94,13 +94,13 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
-  .first-section-main__contents {
+  .main-section-home__contents {
     left: 70%;
     width: 50%;
   }
 }
 
-.first-section-about {
+.main-section-about {
   background-image: url(asset_path("colorful_hills.jpg"));
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +108,7 @@ h2 {
   height: 73vh;
 }
 
-.first-section-about__contents {
+.main-section-about__contents {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -123,7 +123,7 @@ h2 {
   text-shadow: 0 2px 3px rgba(0,0,0,0.4);
 }
 
-.secondary-text {
+.subheading {
   font-weight: 300;
 }
 
@@ -139,20 +139,20 @@ h2 {
   background-color: #286090;
 }
 
-.second-section, .fourth-section {
+.supporting-section, .discover-section {
   padding: 5rem 0.9375rem;
 }
 
-.second-section h2, .fourth-section h2 {
+.supporting-section h2, .discover-section h2 {
   margin: 1.875rem auto;
 }
 
-.second-section p, .fourth-section p {
+.supporting-section p, .discover-section p {
   font-size: 1.3125rem;
   margin-bottom: 0.625rem;
 }
 
-.third-section {
+.secondary-section {
   background-image: url(asset_path("llamas.jpg"));
   background-position: center;
   background-repeat: no-repeat;
