@@ -116,6 +116,22 @@ h2 {
   width: 100%;
 }
 
+.main-section-signup {
+  background-image: url(asset_path("alpaca_peeking.jpg"));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 73vh;
+}
+
+.main-section-signup__contents {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
 .title {
   color: white;
   text-align: center;
