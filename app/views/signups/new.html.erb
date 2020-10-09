@@ -2,7 +2,7 @@
   <div class="main-section-signup__contents">
     <h1 class="title">Get the latest updates from Stories</h1>
 
-    <%= form_for @signup, :html => {:class => "signup-form"} do |f| %>
+    <%= form_for @signup, :url => {:action => :new}, :html => {:class => "signup-form"} do |f| %>
     <div class="form-group">
       <%= f.label :first_name, class: "form-label" %>
       <%= f.text_field :first_name, class: "form-input" %>

@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/thanks' => 'pages#thanks'
 
   resources :signups, only: [:new, :create]
+  post "signups/new"
+
 end
