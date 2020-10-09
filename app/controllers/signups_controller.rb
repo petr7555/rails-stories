@@ -8,7 +8,7 @@ class SignupsController < ApplicationController
         if @signup.save
             redirect_to :thanks
         else
-            redirect_to new_signup_path
+            render new_signup_path
         end
     end
 
