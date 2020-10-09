@@ -31,10 +31,31 @@
   </head>
 
   <body>
+    <a id="simple-menu" href="#sidr">
+      <%= image_tag "menu-black.svg", class: "menu-icon--open" %>
+    </a>
+
+    <div id="sidr">
+      <!-- Your content -->
+      <p>hello</p>
+      <ul>
+        <li><a href="#">List 1</a></li>
+        <li class="active"><a href="#">List 2</a></li>
+        <li><a href="#">List 3</a></li>
+      </ul>
+    </div>
+
+
     <%= yield %>
 
     <footer class="footer">
       <p>&copy; 2020 Petr Janík</p>
     </footer>
   </body>
+
+  <script>
+      $(document).ready(function () {
+          $('#simple-menu').sidr();
+      });
+  </script>
 </html>
