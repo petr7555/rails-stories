@@ -3,7 +3,7 @@
   <head>
     <title>Stories</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -31,31 +31,10 @@
   </head>
 
   <body>
-    <a id="simple-menu" href="#sidr">
-      <%= image_tag "menu-black.svg", class: "menu-icon--open" %>
-    </a>
-
-    <div id="sidr">
-      <!-- Your content -->
-      <p>hello</p>
-      <ul>
-        <li><a href="#">List 1</a></li>
-        <li class="active"><a href="#">List 2</a></li>
-        <li><a href="#">List 3</a></li>
-      </ul>
-    </div>
-
+    <%= render 'layouts/menu' %>
 
     <%= yield %>
 
-    <footer class="footer">
-      <p>&copy; 2020 Petr Janík</p>
-    </footer>
+    <%= render 'layouts/footer' %>
   </body>
-
-  <script>
-      $(document).ready(function () {
-          $('#simple-menu').sidr();
-      });
-  </script>
 </html>

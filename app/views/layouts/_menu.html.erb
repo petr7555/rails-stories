@@ -1,0 +1,10 @@
+<%= image_tag "menu-black.svg", class: "menu-icon--open", :onClick => "openMenu()" %>
+
+<div class="menu" id="menu">
+  <ul class="menu-list">
+    <%= image_tag "close-white.svg", class: "menu-icon--close", :onClick => "closeMenu()" %>
+    <li><%= link_to "Home", :root %></li>
+    <li><%= link_to "About", :about %></li>
+    <li><%= link_to "Contact", new_signup_path %></li>
+  </ul>
+</div>
