@@ -59,7 +59,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 /* ----------------------- */
 
 html {
@@ -185,11 +184,11 @@ h2 {
 }
 
 .menu-icon--open {
+  position: fixed;
   left: 1.875rem;
 }
 
 .menu-icon--open, .menu-icon--close {
-  position: absolute;
   top: 1.875rem;
   width: 24px;
   height: 24px;
@@ -198,6 +197,7 @@ h2 {
 }
 
 .menu-icon--close {
+  position: absolute;
   left: 75%;
 }
 
