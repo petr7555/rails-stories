@@ -30,6 +30,7 @@ See the website [live](https://rails-stories.onrender.com).
 - Install the dependencies:
 	- `bundle install`
 	- `yarn install`
+- Make sure you have `config/master.key` with the correct key.
 - Run migrations: `bundle exec rails db:migrate RAILS_ENV=production`
 - Precompile assets: `bundle exec rails assets:precompile RAILS_ENV=production`
 - Run the server: `RAILS_LOG_TO_STDOUT=true RAILS_SERVE_STATIC_FILES=true bundle exec rails server -p ${PORT:-3000} -e production`
